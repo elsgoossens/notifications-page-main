@@ -7,45 +7,86 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Notifications page</title>
+  <link rel="stylesheet" href="style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
 <body>
 
-  Notifications 3
+  <header>
+    <div class="info"><h1>Notifications</h1> <span class="counter">3</span></div>
+    <button id="markRead" class="markRead">Mark all as read</button>
+</header>
 
-  Mark all as read
-
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
-
-  Angela Gray followed you
-  5m ago
-
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
-
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
-
-  Kimberly Smith commented on your picture
-  1 week ago
-
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
-
-  Anna Kim left the group Chess Club
-  2 weeks ago
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<main>
+  <div class="notification">
+    <div class="avatar">
+      <img src="/assets/images/avatar-mark-webber.webp" alt="Mark Webber">
   </div>
+    <div class="oneNotif">
+      <a href="#" class="name">Mark Webber</a><span class="action"> reacted to your recent post </span><a class="post" href="#">My first tournament today!</a><span class="status unread"></span>
+      <span class="timing">1m ago</span>
+  </div>
+  </div>
+
+
+  <div class="notification">
+    <div class="avatar">
+    <img src="/assets/images/avatar-angela-gray.webp" alt="Angela Gray"></div>
+    <div class="oneNotif">
+      <a href="#"class="name">Angela Gray</a><span class="action"> followed you</span><span class="status unread"></span>
+      <span class="timing">5m ago</span>
+    </div>
+  </div>
+
+  <div class="notification">
+    <div class="avatar"><img src="/assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson"></div>
+    <div class="oneNotif">
+    <a href="#" class="name">Jacob Thompson</a><span class="action"> has joined your group <a class="group" href="#">Chess Club</a><span class="status unread"></span>
+    <span class="timing">1 day ago</span>
+    </div>
+  </div>
+
+  <div class="notification">
+    <div class="avatar">
+    <img src="/assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin"></div>
+    <div class="oneNotif">
+    <a href="#" class="name">Rizky Hasanuddin</a><span class="action"> sent you a private message</span><span class="status"></span>
+    <span class="timing">5 days ago</span>
+    <div class="message">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+      I'm already having lots of fun and improving my game.</div>
+      </div>
+  </div>
+
+  <div class="notification">
+    <div class="avatar">
+    <img src="/assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith"></div>
+    <div class="oneNotif">
+    <a href="#" class="name">Kimberly Smith</a><span class="action"> commented on your picture</span><span class="status"></span>
+    <span class="timing">1 week ago</span>
+    </div>
+    <div><img class="picture" src="/assets/images/image-chess.webp" alt="your picture"></div>
+  </div>
+
+  <div class="notification">
+    <div class="avatar">
+    <img src="/assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson"></div>
+    <div class="oneNotif">
+    <a href="#" class="name">Nathan Peterson</a><span class="action"> reacted to your recent post </span><a class="post" href="#">5 end-game strategies to increase your win rate</a><span class="status"></span>
+    <span class="timing">2 weeks ago</span>
+    </div>
+  </div>
+
+  <div class="notification">
+    <div class="avatar">
+    <img src="/assets/images/avatar-anna-kim.webp" alt="Anna Kim"></div>
+    <div class="oneNotif">
+    <a href="#" class="name">Anna Kim</a><span class="action"> left the group </span><a class="group" href="#">Chess Club</a><span class="status"></span>
+    <span class="timing">2 weeks ago</span>
+    </div>
+  </div>
+
+</main>  
+<script src="app.js"></script>
 </body>
 </html>

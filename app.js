@@ -1,4 +1,5 @@
 var btnRead = document.getElementById("markRead");
+var counter = document.getElementById("counter");
 var statusMarkers = document.getElementsByClassName("status");
 var newNotifications = document.getElementsByClassName("new-notification");
 
@@ -10,6 +11,7 @@ btnRead.addEventListener("click", function(ev){
     for (const n of newNotifications) {
         n.classList.remove("new-notification");
     }
+    counter.innerHTML="0";
 }
 catch(ex){
     console.log("error toggling new status off: " + ex);

@@ -23,7 +23,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Git repository](https://github.com/elsgoossens/notifications-page-main.git)
-- Live Site URL: [live site URL](https://your-live-site-url.com)
+- Live Site URL: [live site URL](https://elsgoossens.github.io/notifications-page-main/)
 
 ## Acknowledgments
 

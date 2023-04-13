@@ -123,7 +123,7 @@ button{
 .message{
     margin: 20px 0;
     padding: 30px;
-    border: 1px solid var(--clr-Dark-grayish-blue);
+    border: 1px solid var(--clr--Light-grayish-blue-1);
     border-radius: 8px;
     color: var(--clr-Dark-grayish-blue);
 }
@@ -159,28 +159,23 @@ button:hover, a:hover{
 @media (min-width: 1440px) {
 
     h1{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .counter{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     button{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     body{
-        background-color: var(--clr-Very-light-grayish-blue);
-    }
-
-    .avatar img{
-        padding: 10px 0;
-        max-width: 60px;
+        background-color: var(--clr-Very-light-grayish-blue2);
     }
 
     main, header{
-        margin: 0 50px;
+        margin: 100px 50px;
     }
 
     .container{

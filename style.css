@@ -24,50 +24,63 @@
 
 /* for easy calculations used 10px, main font used is 16px */
 body{
-    font-size: 10px;
     font-family: var(--ff);
+}
+
+.container{
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: var(--clr-White);
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
 }
 
 header{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 h1{
     display: inline;
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 
 .counter{
     margin: 0 10px;
     padding: 2px 15px;
     font-weight: var(--fw-800);
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: var(--clr-White);
     background-color: var(--clr-Very-dark-blue);
     border-radius: 8px;
 }
 
 main{
-    margin: 0;
-    padding: 0;
     background-color: var(--clr-White);
-    font-size: 1.6rem;
-    width:100%;
     display: flex;
     flex-direction: column;
 }
 
+main, header{
+    margin: 0 10px;
+}
+
 .notification{
     display: flex;
-    margin: 10px 20px;
     padding: 10px;
     border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.new-notification{
     background-color: var(--clr-Very-light-grayish-blue);
 }
 
 .oneNotif{
-    padding: 0 20px;
+    padding: 10px 20px;
 }
 
 .name{
@@ -77,7 +90,7 @@ main{
 button{
     border: none;
     background-color: var(--clr-White);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color:var(--clr-Dark-grayish-blue);
 }
 
@@ -93,8 +106,9 @@ button{
     background-color: red;
 }
 
-.avatar{
-    max-height: 50px;
+.avatar img{
+    padding: 20px 0;
+    max-width: 40px;
 }
 
 .timing{
@@ -108,7 +122,7 @@ button{
 
 .message{
     margin: 20px 0;
-    padding: 10px;
+    padding: 30px;
     border: 1px solid var(--clr-Dark-grayish-blue);
     border-radius: 8px;
     color: var(--clr-Dark-grayish-blue);
@@ -143,8 +157,34 @@ button:hover, a:hover{
 }
 
 @media (min-width: 1440px) {
-    main{
-        max-width: 80%;
-        margin: auto;
+
+    h1{
+        font-size: 2rem;
     }
+
+    .counter{
+        font-size: 1.5rem;
+    }
+
+    button{
+        font-size: 1.5rem;
+    }
+
+    body{
+        background-color: var(--clr-Very-light-grayish-blue);
+    }
+
+    .avatar img{
+        padding: 10px 0;
+        max-width: 60px;
+    }
+
+    main, header{
+        margin: 0 50px;
+    }
+
+    .container{
+        width:60%;
+    }
+
 }
